@@ -1,0 +1,75 @@
+/*******************************************************************************************************************
+                                	All Responsive Code
+*******************************************************************************************************************/
+/* ==========================================================================
+                        for more responsive large destop
+   ========================================================================== */
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    
+}
+
+
+
+/* ==========================================================================
+                        for more responsive large destop
+   ========================================================================== */
+/*// Large devices (desktops, 992px and up)*/
+@media (max-width: 991px) {
+    .menu_section .navbar-toggler {
+        padding: 15px 40px;
+        border: none;
+        font-size: 34px;
+    }   
+}
+
+/* ==========================================================================
+                        for more responsive medium device
+   ========================================================================== */
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (max-width: 767px) { 
+    .about-right {padding-top: 25px;}
+    #portfolio .button {padding: 10px 8px;}
+    .element-item img {border: 3px solid white;}
+    .footer-right h5 {font-size: 16px;}
+    .footer-left a {margin: 0px 2px;padding: 1px 5px;width: 27px;height: 27px;}  
+}
+
+
+
+
+/* ==========================================================================
+                        for more responsive medium device
+   ========================================================================== */
+/*
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+*/
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (max-width:576px) {
+        .form-area .form-control {margin-bottom: 15px;}
+        .bottom-overview {padding: 80px 0;}
+    .footer-right {padding-top: 20px;text-align: center;}
+    .footer-left li {margin: auto;}
+}
+
+/* ==========================================================================
+                        for more responsive small device
+   ========================================================================== */
+
+@media (max-width: 300px) {
+    .logo img {height: 55px;max-width: 150px;}
+    .about-right a {width: 100%;}
+    .blog a {width: 100%;}
+    .form-area .form-control {margin-bottom: 15px;}
+    .footer-right {padding-top: 20px;text-align: center;}
+    .footer-left li {margin: auto;}
+    .form-area button {width: 100%;}
+    .header-bottom h2 {font-size: 23px;}
+    .header-bottom p {display: none}
+    
+}
+
+

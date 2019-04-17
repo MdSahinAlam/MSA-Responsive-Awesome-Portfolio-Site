@@ -1,0 +1,231 @@
+/*==================================================================================================================
+                                            isotope custome Css
+                                                start now
+==================================================================================================================*/
+/*==================================================
+            portfolio start now
+===================================================*/
+.about_top h2 {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+/* ---- button ---- */
+
+#portfolio .button {
+  display: inline-block;
+  padding: 10px 18px;
+  background: none;
+  border: none;
+  font-family: sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+    font-weight: bold;
+}
+
+#portfolio .button:hover {
+    color: red
+        
+}
+
+.button:active,
+.button.is-checked {
+    color: red;
+    outline: none
+    
+}
+
+/* ---- button-group ---- */
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.button-group{
+    margin-bottom: 20px;
+    text-align: center
+}
+.button-group .button {
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+
+/* ---- .element-item ---- */
+
+.element-item > * {
+  margin: 0;
+  padding: 0;
+}
+.element-item{
+    width: 33%;
+    position: relative;
+    overflow: hidden;
+    
+}
+#portfolio-popup{
+    	color: white;
+}
+.portfolio-overley {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 0, 0,.4);
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 32px;
+    top: -100%;
+    transition: .5s
+}
+.element-item:hover .portfolio-overley{
+    top: 0;
+}
+.element-item img {
+	width: 100%;
+	border: 12px solid white;
+    overflow: hidden
+}
+
+.element-item .name {
+  position: absolute;
+
+  left: 10px;
+  top: 60px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.element-item .symbol {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+}
+
+.element-item .number {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+}
+
+.element-item .weight {
+  position: absolute;
+  left: 10px;
+  top: 76px;
+  font-size: 12px;
+}
+
+/*==================================================================================================================
+                                            isotope custome Css
+                                                    end now
+==================================================================================================================*/
+
+
+
+/*================================================================================================================
+                            skillbar custome jquery plagin 
+                                        end
+================================================================================================================*/
+/*==================================================
+            skillbar start now
+===================================================*/
+#skill {
+	list-style: none;
+	font: 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	width: 100%;
+	position: relative;
+	line-height: 2em;
+	padding: 30px 0;
+}
+
+#skill li {
+	margin-bottom: 36px;
+	background: #1b0e04;
+	/* background-image: -webkit-gradient(linear, left top, left bottom, from(#e1ddd9), to(#e9e5e2)); */
+	background-image: -webkit-linear-gradient(top, #e1ddd9, #e9e5e2);
+	background-image: -moz-linear-gradient(top, #382a1d, #4e4741);
+	background-image: -ms-linear-gradient(top, #e1ddd9, #e9e5e2);
+	background-image: -o-linear-gradient(top, #e1ddd9, #e9e5e2);
+	background-image: linear-gradient(top, #e1ddd9, #e9e5e2);
+	height: 20px;
+	border-radius: 10px;
+	-moz-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+	-webkit-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+	box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+}
+#skill li h5 {
+	position: relative;
+	top: -27px;
+	float: right;
+	font-size: 14px;
+	padding-right: 5px;
+	font-weight: bold;
+	color: white;
+}
+#skill li h4 {
+	position: relative;
+	top: -23px;
+	left: 10px;
+	font-size: 18px;
+    text-transform: uppercase;
+}
+.bar {
+	height: 11px;
+	margin: 4px 4px;
+	position: absolute;
+	border-radius: 10px;
+	-moz-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+	-webkit-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+	box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+}
+
+.graphic-design {
+	width:95%; 
+	-moz-animation:graphic-design 10s ease-out;
+	-webkit-animation:graphic-design 10s ease-out;
+	background-color: #da3d3d;
+}
+
+.html-css {
+	width:90%;
+	-moz-animation:html-css 10s ease-out;
+	-webkit-animation:html-css 10s ease-out;
+	background-color: #da3d3d;
+}
+
+.jquery {
+	width:65%;
+	-moz-animation:jquery 10s ease-out;
+	-webkit-animation:jquery 10s ease-out;
+	background-color: #da3d3d;
+}
+
+.wordpress {
+	width:80%;
+	-moz-animation:wordpress 10s ease-out;
+	-webkit-animation:wordpress 10s ease-out;
+	background-color: #da3d3d;	
+}
+
+@-moz-keyframes graphic-design {0%  { width:0px;} 100%{ width:95%;}  }
+@-moz-keyframes html-css        { 0%  { width:0px;} 100%{ width:90%;}  }
+@-moz-keyframes jquery      { 0%  { width:0px;} 100%{ width:65%;}  }
+@-moz-keyframes wordpress   { 0%  { width:0px;} 100%{ width:80%;}  }
+
+@-webkit-keyframes graphic-design       { 0%  { width:0px;} 100%{ width:95%;}  }
+@-webkit-keyframes html-css        { 0%  { width:0px;} 100%{ width:90%;}  }
+@-webkit-keyframes jquery      { 0%  { width:0px;} 100%{ width:65%;}  }
+@-webkit-keyframes wordpress   { 0%  { width:0px;} 100%{ width:80%;}  }
+
+/*================================================================================================================
+                            skillbar custome jquery plagin 
+                                        end
+================================================================================================================*/

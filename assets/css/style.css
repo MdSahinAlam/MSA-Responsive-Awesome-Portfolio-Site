@@ -1,0 +1,514 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:  Psd to html with boostarp
+Version:  1.1 version
+Last change:    01/01/18 [fixed Float bug, vf]
+Author Name: Md Sahin Alam
+Primary use:   just practice 
+-------------------------------------------------------------------*/
+/*========Google font============*/
+/*font-family: 'Bree Serif', serif;*/
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700|Bree+Serif|Oxygen:300,400,700|Shadows+Into+Light|Titillium+Web:200,200i,300,300i,400,600,700,700i,900&subset=latin-ext');
+
+/*font-family: 'Poiret One', cursive;*/
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700|Bree+Serif|Poiret+One&subset=latin-ext');
+
+/*font-family: 'Concert One', cursive;*/
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700|Bree+Serif|Concert+One|Poiret+One&subset=latin-ext');
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+html,
+body{
+    height: 100%;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+	background-color:#FFF;
+	color:#000;
+	font-size:14px;
+}
+a{
+	text-decoration:none;
+	color:#000;
+}
+a:hover{
+    text-decoration: none;
+    color: transparent;
+}
+ul{
+	list-style:none;
+}
+
+.flex{
+	display:flex;
+}
+.space{
+	justify-content:space-between;
+}
+.flexwrap{
+	flex-wrap:wrap;
+}
+.text-center{
+    text-align: center;
+}
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+/* ============================================ Header top ===============================================*/
+p{
+    font-family: 'Poiret One', cursive;
+}
+h2{
+    font-family: 'Bree Serif', serif;
+}
+
+
+#menubar {
+	background: rgba(0,0,0,.3);
+}
+.logo img {
+	height: 60px;
+	max-width: 230px;
+}
+.navbar-nav {
+	text-transform: uppercase;
+	padding: 16px 0;
+}
+
+.nav-item{
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #FC320C;
+	transition: 0.5s;
+    font-weight: bold
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: white;
+}
+/* ========================================== Header bottom ===========================================*/
+
+#header-bottom {
+	background: url("../img/header-bottom-bg.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+.bottom-overview{
+    height: 100%;
+    background: rgba(0,0,0,.5)
+}
+.header-bottom {
+	color: white;
+	max-width: 800px;
+	margin: auto;
+	text-align: center;
+	height: 100vh;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+.header-bottom h2{
+    font-weight: ;
+    font-family: 'Bree Serif', serif;
+}
+.header-bottom span{
+    color: #FC320C;
+}
+.header-bottom p{
+    font-family: 'Poiret One', cursive;
+    
+    }
+.header-bottom button{
+    margin-top: 15px;
+}
+.btn-primary {
+	color: #fff;
+	background-color: #FF300A;
+	border-color: #FF300A;
+    transition: .6s;
+}
+
+.btn.btn-primary:hover {
+  background: white;
+  color: red;
+}
+/* =======================================About Section==============================================*/
+
+#about {
+    padding: 50px 0;
+    background: #F5F4F6;
+    color: black;
+    transition: .5s;
+}
+
+.top h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+    font-family: 'Concert One', cursive;
+    position: relative;
+    padding-bottom: 8px;
+    margin-bottom: 25px
+}
+.top span{
+    color: #FC320C;
+}
+.top h2::after {
+	content: '';
+	height: 2px;
+	width: 181px;
+	background: #ec1515;
+	bottom: 0;
+	left: 50%;
+	position: absolute;
+	margin-left: -92px;
+}
+.top h2::before {
+	position: absolute;
+	content: '';
+	width: 16px;
+	height: 16px;
+	border-radius: 100%;
+	background: #f51a1a;
+	top: 100%;
+	left: 50%;
+	margin-left: -12px;
+	margin-top: -10px;
+}
+
+.about-left{
+    position: relative;
+    overflow: hidden;
+}
+.img-overley {
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: -100%;
+    height: 80px;
+    transition: .6s;
+    
+}
+.about-left:hover .img-overley , .active{
+    bottom: 0;
+}
+.img-overley ul {
+	display: flex;
+	justify-content: center;
+}
+.img-overley span {
+	color: #ec1515;
+	padding: 6px 10px;
+	display: inline-block;
+	background: #fff;
+	border-radius: 100%;
+	margin: 5px 5px;
+    text-align: center
+}
+.img-overley h4{
+    font-weight: bold;
+}
+.img-overley span:hover{
+    background: #ec1515;
+    color: #fff;
+}
+.about-right a {
+	background: red;
+	color: white;
+	padding: 8px 30px;
+	border: 1px solid red;
+	transition: .3s;
+	font-weight: bold;
+}
+.about-right a:hover {
+	background: white;
+	border: 1px solid red;
+	color: red;
+}
+.skill-bar h3 {
+	font-weight: 600;
+	color: #712020;
+}
+/* =======================================video area Section=============================================*/
+
+#video-area {
+	background: url(../img/video-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+    background-attachment: fixed;
+}
+.video-content h2{
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.video-content a {
+	padding: 5px 15px;
+	border-radius: 5px;
+	margin-top: 10px;
+    border: 1px solid white;
+    font-size: 32px;
+    color: white
+
+}
+.video-content a:hover{
+    	color: red;
+    	border: 1px solid red;
+}
+.video-rgba {
+	background: rgba(0,0,0,.5);
+    	padding: 50px 0;
+}
+
+/* =======================================service Section=============================================*/
+
+#service {
+    padding: 50px 0;
+}
+.our-services span {
+	font-size: 45px;
+	color: red;
+}
+.our-services h3 {
+	font-weight: 600;
+	color: #cf5555;
+	padding: 5px 0;
+}
+
+/* =======================================counter Section=============================================*/
+
+#counter {
+    background: url(../img/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+.counter-bg {
+	background: rgba(0,0,0,.6);
+        padding: 50px 0;
+}
+.counter-box span {
+  font-size: 35px;
+  padding: 0px 5px;
+  border: 1px solid white;
+  display: inline-block;
+  border-radius: 100%;
+  margin-bottom: 10px;
+    transition: .5s
+}
+.counter-box span:hover{
+    background: red;
+    color: white
+}
+.counter-box h4 {
+  text-transform: capitalize;
+}
+.counter-box h6{
+    font-size: 30px
+}
+/* =======================================Portfolio Section=============================================*/
+#portfolio{
+    padding: 50px 0;
+}
+
+
+
+
+
+/* =======================================team Section=============================================*/
+
+#team {
+    padding: 50px 0;
+    background: #e1e1e1;
+    
+}
+.team-overlay{
+  background: rgba(255,0,0,.4);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.item {
+  position: relative;
+}
+.team-hover {
+	position: absolute;
+	width: 100%;
+	background: red;
+	color: white;
+	text-align: center;
+	bottom: -69px;
+	height: auto;
+    transition: .4s
+}
+.team-hover p{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.team-hover ul {
+	display: flex;
+	justify-content: center;
+}
+.team-hover a {
+	display: inline-block;
+	color: white;
+	padding: 0px 5px;
+}
+.item:hover .team-overlay{
+    visibility: visible;
+}
+.item:hover .team-hover{
+    bottom: 0;
+}
+
+
+
+
+
+
+/* =======================================Testominal Section=============================================*/
+#testominal {
+	background: url(../img/testaminal.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.testaminal-overflow {
+	background: rgba(0,0,0,.5);
+        padding: 50px 0;
+}
+.my-testimonial .items img {
+	width: auto;
+	border-radius: 50%;
+    margin: auto;
+}
+.my-testimonial .items h2 {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+    padding-top: 10px;
+}
+.my-testimonial .items p {
+	color: #d5bdbd;
+	font-size: 18px;
+}
+
+
+
+/* =======================================Testominal Section=============================================*/
+#blog {
+    background: white;
+    color: black;
+    padding: 50px 0;
+}
+
+.blog img {
+  max-width: 100%;
+    border-bottom: 5px solid #f90808;
+}
+.blog h3 {
+  font-weight: 500;
+  padding: 10px 0;
+}
+.blog a {
+	display: inline-block;
+	background: red;
+	color: white;
+	padding: 5px 10px;
+	transition: .3s;
+    border-radius: 5px;
+}
+.blog a:hover {
+	background: black;
+	color: red;
+}
+
+
+/* =======================================contact Section=============================================*/
+
+
+#contact {
+    background: url(../img/counter-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-attachment: fixed;
+}
+.contact-overflow {
+	background: rgba(0,0,0,.5);
+        padding: 50px 0;
+}
+.form-area .form-control{
+    background: transparent;
+    color: white;
+}
+.form-area input::placeholder,
+.form-area textarea::placeholder
+{
+	color: white;
+}
+.form-area input{
+    height: 45px;
+}
+/* =======================================footer Section=============================================*/
+#footer {
+    padding: 50px 0;
+    background: black;
+    color: red;
+}
+.footer-left ul{
+    margin: 0;
+    padding: 0;
+}
+.footer-left a {
+	color: red;
+	display: block;
+	border: 1px solid red;
+	margin: 0px 5px;
+	border-radius: 100%;
+	height: 50px;
+	padding: 3px 6px;
+	background: white;
+	width: 30px;
+	height: 30px;
+    transition: .3s
+}
+.footer-left a:hover{
+    background: red;
+    color: black;
+}
+.footer-right a {
+	color: wheat;
+}
+.footer-right a:hover{
+    color: red;
+}
+
+
+
+
+
+
+/*******************************************************************************************************************
+                                	All Responsive Code
+*******************************************************************************************************************/
+.menu_section span {
+        color: red;
+    }
+
+
+
